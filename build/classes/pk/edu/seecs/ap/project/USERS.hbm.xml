@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+	
+<hibernate-mapping>
+
+	<class name="pk.edu.seecs.ap.project.USERS" table="Users">
+
+		<id name="Username" column="Username">
+			<generator class="assigned" />
+		</id>
+
+		<property name="First_Name">
+			<column name="First_Name" length="16" not-null="true" />
+		</property>
+
+		<property name="Last_Name">
+			<column name="Last_Name" length="16" not-null="true" />
+		</property>
+
+		<property name="e_mail">
+			<column name="email" length="16" not-null="true" />
+		</property>
+		
+			<property name="Password">
+			<column name="Password" length="16" not-null="true" />
+		</property>
+		
+			<property name="Opting">
+			<column name="Opting" length="16" not-null="true" />
+		</property>
+
+	</class>
+</hibernate-mapping>
